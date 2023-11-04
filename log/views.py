@@ -24,7 +24,7 @@ def maVue(req: WSGIRequest):
             else:
                return HttpResponse("<H1><center>Erreur du mot de passe ou du nom d'utilisateur</center></H1>")
 
-        return HttpResponse("<H1><center> Connexion Reussie </center></H1>")
+        return HttpResponse("<H1> <center> Connexion Reussie </center></H1>")
 
         print(f"{req.POST['pwd']} {result}")
     return render(req, "index.html", {})
