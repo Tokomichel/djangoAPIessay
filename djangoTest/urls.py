@@ -10,7 +10,7 @@ router.registry.extend(note_router.registry)
 
 urlpatterns = [
     path('manage/', admin.site.urls),
-    # path('toko', views.toko_views),
-    # path('', include('log.urls')),
+    path('toko', views.toko_views),
+    path('log', include('log.urls')),
     path('', include(router.urls))
 ]
