@@ -1,7 +1,7 @@
 from django.core.handlers.wsgi import WSGIRequest
 from django.shortcuts import render
 from django.http import HttpResponse
-from api.models import *
+# from api.models import *
 from log.models import User
 
 
@@ -14,19 +14,19 @@ def maVue(req: WSGIRequest):
         result: object
 
         for el in use:
-            if el.user_name == req.POST["login"]:
+             if el.user_name == req.POST["login"]:
                 result = el
                 if el.password == req.POST["pwd"]:
-                    print("okay")
+                     print("okay")
                 else:
                     message = "Erreur de nom du mot de passe"
                     return HttpResponse("<H1><center>Erreur du mot de passe ou du nom d'utilisateur</center></H1>")
-            else:
+             else:
                return HttpResponse("<H1><center>Erreur du mot de passe ou du nom d'utilisateur</center></H1>")
 
         return HttpResponse("<H1> <center> Connexion Reussie </center></H1>")
 
-        print(f"{req.POST['pwd']} {result}")
+
     return render(req, "index.html", {})
 
 def okay(req):
