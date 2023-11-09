@@ -2,6 +2,7 @@ from datetime import datetime
 
 from rest_framework import serializers
 from api.models import *
+from  log.models import *
 
 class NoteSerializer(serializers.Serializer):
 
@@ -25,3 +26,20 @@ class NoteSerializer(serializers.Serializer):
     class Meta:
         model = Note
         exclude = ['titre']
+
+class UserApi(serializers.Serializer):
+    user_name = serializers.CharField(max_length=20)
+    email = serializers.CharField(max_length=20)
+    password = serializers.CharField(max_length=20)
+
+    def create(self, validated_data):
+        user = User()
+        user.user_name = validated_data['user_name']
+        user.email = validated_data['email']
+        user.password = validated_data['password']
+
+        user.save()
+        return user
+
+    class Meta:
+        model = User

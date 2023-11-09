@@ -14,5 +14,6 @@ urlpatterns = [
     path('toko', views.toko_views),
     path('log', include('log.urls')),
     path('post', api.views.ApiViewSet.as_view()),
+    path('crud/<int:id>/', api.views.NoteDetailView.as_view()), # get one
     path('', include(router.urls))
 ]

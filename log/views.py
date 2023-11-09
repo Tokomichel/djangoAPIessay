@@ -29,5 +29,14 @@ def maVue(req: WSGIRequest):
 
     return render(req, "index.html", {})
 
-def okay(req):
-    return render(req, 'index.html', {})
+def createUser(req: WSGIRequest):
+    message = ""
+    if req.method == 'POST':
+        user = User()
+        user.user_name = req.POST["user_name"]
+        user.email = req.POST['email']
+        user.password = req.POST['password']
+        user.save()
+
+        return HttpResponse("<H1> <center> Creation Reussie </center></H1>")
+    return render(req, 'user.html', {})

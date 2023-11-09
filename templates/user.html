@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create user</title>
+    <style>
+        body
+        {
+            background-color: rgb(107, 173, 151);
+        }
+        .co
+        {
+            display: flex;
+            justify-content: center;
+
+            width: 100%;
+            height: 250px;
+            margin-top: 50px;
+            font-size: 18;
+        }
+
+        .co .cs
+        {
+            width: 14%;
+            height: 100%;
+            border: 1px solid rgb(65, 63, 63);
+            border-radius: 7px;
+            padding: 2px;
+            padding-top: 18px;
+            margin-top: 20px;
+
+            background-color: aliceblue;
+        }
+
+        .i
+        {
+            border-radius: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="co">
+        <div class="cs">
+            <form method="post">
+                {% csrf_token %}
+                <center>
+                <input  class="i" name="user_name" type="text" placeholder="user_name"><br>
+                <br>
+                <br>
+                <input class="i" name="email" type="email" placeholder="email"><br>
+                <br>
+                <br>
+                <input class="i" name="password" type="text" placeholder="password"><br>
+                <br>
+                <br>
+                </br>
+                <button type="submit">SUBMIT</button></center>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
