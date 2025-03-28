@@ -78,6 +78,18 @@
         <mxCell id="c4ljgmaWJESwMZTwx-YB-17" value="&lt;font style=&quot;color: rgb(234, 107, 102);&quot;&gt;VCC&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="220" y="185" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="c4ljgmaWJESwMZTwx-YB-18" value="&lt;font style=&quot;color: rgb(234, 107, 102);&quot;&gt;3.3V&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c4ljgmaWJESwMZTwx-YB-19" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=4;strokeColor=#7B7B7B;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="300" as="sourcePoint" />
+            <mxPoint x="640" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c4ljgmaWJESwMZTwx-YB-20" value="&lt;font style=&quot;color: rgb(51, 51, 51);&quot;&gt;GND&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
